@@ -22,9 +22,13 @@ with st.sidebar:
     youtube_url = st.text_input(
         "🔗 YouTube URL", placeholder="Paste your YouTube URL here..."
     )
+    # model_name = st.selectbox(
+    #     "🤖 Model Name", ["gemini-1.5-pro", "gemini-1.5-flash"]
+    # )
     model_name = st.selectbox(
-        "🤖 Model Name", ["gemini-1.5-pro", "gemini-1.5-flash"]
-    )
+        "🤖 Model Name", ["gemini-1.5-flash"]
+     )
+
 
     system_prompt = st.selectbox(
         "💬 System Prompt", ["tutorial-only", "class-lecture", "custom"]
@@ -85,4 +89,4 @@ else:
 
 # Footer
 st.markdown("---")
-st.markdown("Made with ❤️ by Isham Rashik | [GitHub](https://github.com/di37)")
+st.markdown("Made with ❤️ by Mohammad Yahiya")
