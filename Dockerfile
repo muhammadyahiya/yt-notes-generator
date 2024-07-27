@@ -49,4 +49,5 @@ RUN /bin/bash -c "source activate yt_notes_generator && \
 EXPOSE 8501
 
 # Run Streamlit app when the container launches
-CMD ["/bin/bash", "-c", "source activate yt_notes_generator && streamlit run app.py --server.port=8501 --server.address=0.0.0.0"]
+# CMD ["/bin/bash", "-c", "source activate yt_notes_generator && streamlit run app.py --server.port=8501 --server.address=0.0.0.0"]
+CMD ["/bin/bash", "-c", "source activate yt_notes_generator && streamlit run app.py --server.port=8501"]
